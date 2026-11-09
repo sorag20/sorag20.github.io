@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sorag20 | Portfolio</title>
+  <meta name="description" content="Web エンジニア sorag20 のポートフォリオ。Laravel による暗号資産向け会計ソフトの開発・保守と、Go + Kubernetes による動画配信基盤の個人開発。">
+  <meta property="og:title" content="sorag20 | Portfolio">
+  <meta property="og:description" content="Laravel による暗号資産向け会計ソフトの開発・保守と、Go + Kubernetes による動画配信基盤の個人開発。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f766e'/><text x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='white'>&lt;/&gt;</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">sorag20</a>
+      <nav class="nav" aria-label="ページ内リンク">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Web Engineer</p>
+        <h1 class="hero-title">sorag20</h1>
+        <p class="hero-lead">
+          Laravel を用いた暗号資産向け会計ソフトの開発・保守に従事しています。<br class="pc-only">
+          個人開発では Go と Kubernetes で動画配信基盤を構築し、AWS（EKS）へのデプロイと CI/CD まで一貫して手がけています。
+        </p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="https://github.com/sorag20" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="#projects">個人開発を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">01</span>Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul class="chips">
+              <li class="chip chip-strong">PHP</li>
+              <li class="chip chip-strong">Laravel</li>
+              <li class="chip">Go</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <ul class="chips">
+              <li class="chip chip-strong">JavaScript</li>
+              <li class="chip chip-strong">HTML / CSS</li>
+              <li class="chip chip-strong">Vue.js</li>
+              <li class="chip">TypeScript</li>
+              <li class="chip">React</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Database / Middleware</h3>
+            <ul class="chips">
+              <li class="chip chip-strong">MySQL</li>
+              <li class="chip chip-strong">Redis</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">FFmpeg</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Infra / DevOps</h3>
+            <ul class="chips">
+              <li class="chip chip-strong">Docker</li>
+              <li class="chip chip-strong">AWS (EC2 / ECS / S3)</li>
+              <li class="chip chip-strong">GitHub Actions</li>
+              <li class="chip">AWS (EKS / S3)</li>
+              <li class="chip">Kubernetes</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note"><span class="chip chip-strong chip-sample">濃色</span>は実務で使用している技術です。</p>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">02</span>Experience</h2>
+
+        <article class="card exp-card">
+          <div class="exp-head">
+            <div>
+              <p class="exp-period">2023.05 — 現在</p>
+              <h3 class="card-title">暗号資産向け会計ソフトの開発・保守</h3>
+            </div>
+            <span class="badge">業務</span>
+          </div>
+          <p class="card-body">
+            暗号資産を取り扱う事業者や個人向けの会計ソフトの開発・保守を担当。
+          </p>
+          <!-- 担当した機能・改善内容・チーム規模などを追記すると伝わりやすくなります -->
+          <dl class="spec spec-wide">
+            <div><dt>言語</dt><dd>PHP / HTML / CSS / JavaScript</dd></div>
+            <div><dt>フレームワーク</dt><dd>Laravel / Vue.js</dd></div>
+            <div><dt>DB</dt><dd>MySQL</dd></div>
+            <div><dt>インフラ</dt><dd>Docker / AWS（EC2 / ECS）</dd></div>
+            <div><dt>OS</dt><dd>macOS</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">03</span>Projects</h2>
+
+        <article class="card project">
+          <div class="project-head">
+            <div>
+              <p class="project-kind">個人開発</p>
+              <h3 class="card-title project-title">video-stream</h3>
+              <p class="project-tagline">Go + Kubernetes + HLS による動画配信プラットフォーム</p>
+            </div>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/sorag20/video-stream" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              Repository
+            </a>
+          </div>
+
+          <p class="card-body">
+            動画をアップロードすると、バックグラウンドで FFmpeg により HLS 形式へ変換し、ブラウザでストリーミング再生できるサービスです。
+            React 製の Web UI から、アップロード・変換状況の確認・再生まで一通り操作できます。
+            ローカル（Docker Compose / Docker Desktop の Kubernetes）と AWS EKS の両方で動かせるように設計しています。
+          </p>
+
+          <!-- 処理の流れ -->
+          <h4 class="sub-title">処理の流れ</h4>
+          <ol class="flow">
+            <li class="flow-step">
+              <span class="flow-label">01 · Upload Service</span>
+              <code class="flow-api">POST /videos</code>
+              <p>原本をオブジェクトストレージに保存し、メタデータを PostgreSQL に登録（pending）。変換ジョブを Redis キューに投入して即座にレスポンス。</p>
+            </li>
+            <li class="flow-arrow" aria-hidden="true"></li>
+            <li class="flow-step">
+              <span class="flow-label">02 · Transcoder Worker</span>
+              <code class="flow-api">Redis BLPOP</code>
+              <p>キューからジョブを取り出し、FFmpeg で HLS に変換。成果物を保存する。</p>
+            </li>
+            <li class="flow-arrow" aria-hidden="true"></li>
+            <li class="flow-step">
+              <span class="flow-label">03 · Streaming Service</span>
+              <code class="flow-api">GET /stream</code>
+              <p>.m3u8 / .ts を配信。ブラウザ側は hls.js で再生。</p>
+            </li>
+          </ol>
+
+          <!-- 工夫した点 -->
+          <h4 class="sub-title">取り組んだこと</h4>
+          <ul class="points">
+            <li>
+              <strong>非同期処理によるサービス分割</strong>
+              重い動画変換を Redis キュー経由の Worker に切り出し、アップロード API の応答を変換時間に左右されない構成にしました。
+            </li>
+            <li>
+              <strong>環境ごとのストレージ切り替え</strong>
+              ローカルでは MinIO 互換ストレージ、EKS では S3 を使用。
+            </li>
+            <li>
+              <strong>Kubernetes / Gateway API</strong>
+              Kustomize の base / overlays でローカルと EKS の差分を管理。Envoy Gateway（Gateway API）でパスごとに各サービスへルーティングしています。
+            </li>
+            <li>
+              <strong>AWS EKS へのデプロイ</strong>
+              Graviton（arm64）ノード 1 台の構成。NLB で TLS を終端（ACM）し、Envoy の SecurityPolicy で Basic 認証をかけています。
+            </li>
+            <li>
+              <strong>GitHub Actions による CI/CD</strong>
+              develop → main のリリース PR をマージすると、イメージをビルドし、ECR への push と EKS へのデプロイまで自動で行います。
+            </li>
+            <li>
+              <strong>コストを意識した構成</strong>
+              NAT Gateway の代わりに小さな NAT インスタンスを使い、S3 へはゲートウェイエンドポイント経由で接続。
+            </li>
+          </ul>
+
+          <!-- 技術スタック -->
+          <h4 class="sub-title">技術スタック</h4>
+          <dl class="spec spec-wide">
+            <div><dt>バックエンド</dt><dd>Go / go-chi / pgx / go-redis / minio-go</dd></div>
+            <div><dt>フロントエンド</dt><dd>React / TypeScript / Vite / hls.js</dd></div>
+            <div><dt>データ</dt><dd>PostgreSQL / Redis / MinIO・S3</dd></div>
+            <div><dt>動画変換</dt><dd>FFmpeg（H.264 / AAC / HLS）</dd></div>
+            <div><dt>インフラ</dt><dd>Docker / Kubernetes / Kustomize / Envoy Gateway</dd></div>
+            <div><dt>AWS</dt><dd>EKS / ECR / S3 / Route 53</dd></div>
+            <div><dt>CI/CD</dt><dd>GitHub Actions</dd></div>
+          </dl>
+
+          <!-- AWS 構成図 -->
+          <h4 class="sub-title">AWS 構成図</h4>
+          <figure class="figure">
+            <a href="assets/aws-infra.png" target="_blank" rel="noopener" title="クリックで拡大">
+              <img src="assets/aws-infra.png" width="1801" height="1302" loading="lazy"
+                   alt="AWS 構成図。利用者のブラウザから Internet Gateway と NLB を経由し、プライベートサブネットの EKS ノード上の Envoy プロキシが web / upload / streaming の各サービスへ振り分ける。upload と transcoder は postgres と redis を使い、動画は S3 ゲートウェイエンドポイント経由で S3 に保存する。">
+            </a>
+            <figcaption>クリックで拡大表示</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 sorag20</p>
+      <a href="https://github.com/sorag20" target="_blank" rel="noopener">github.com/sorag20</a>
+    </div>
+  </footer>
+</body>
+</html>

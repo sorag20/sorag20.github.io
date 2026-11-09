@@ -34,8 +34,7 @@
         <h1 class="hero-title">sorag20</h1>
         <p class="hero-lead">
           Laravel を用いた暗号資産向け会計ソフトの開発・保守に従事しています。バックエンドが中心です。<br class="pc-only">
-          個人開発では Go と Kubernetes で動画配信基盤を構築し、AWS（EKS）へのデプロイと<br class="pc-only">
-          CI/CD まで一貫して手がけています。
+          個人開発では Go と Kubernetes で動画配信基盤を構築し、AWSへのデプロイとCI/CD まで一貫して手がけています。
         </p>
         <div class="hero-links">
           <a class="btn btn-primary" href="https://github.com/sorag20" target="_blank" rel="noopener">
@@ -142,8 +141,7 @@
 
           <p class="card-body">
             動画をアップロードすると、バックグラウンドで FFmpeg により HLS 形式へ変換し、ブラウザでストリーミング再生できるサービスです。
-            React 製の Web UI から、アップロード・変換状況の確認・再生まで一通り操作できます。
-            ローカル（Docker Compose / Docker Desktop の Kubernetes）と AWS EKS の両方で動かせるように設計しています。
+            ローカルとAWS EKS の両方で動かせるように設計しています。
           </p>
 
           <!-- 処理の流れ -->
@@ -152,13 +150,13 @@
             <li class="flow-step">
               <span class="flow-label">01 · Upload Service</span>
               <code class="flow-api">POST /videos</code>
-              <p>原本をオブジェクトストレージに保存し、メタデータを PostgreSQL に登録（pending）。変換ジョブを Redis キューに投入して即座にレスポンス。</p>
+              <p>原本をオブジェクトストレージに保存し、メタデータを PostgreSQL に登録。変換ジョブを Redis キューに投入して即座にレスポンス。</p>
             </li>
             <li class="flow-arrow" aria-hidden="true"></li>
             <li class="flow-step">
               <span class="flow-label">02 · Transcoder Worker</span>
               <code class="flow-api">Redis BLPOP</code>
-              <p>キューからジョブを取り出し、FFmpeg で HLS に変換。成果物を保存する。</p>
+              <p>キューからジョブを取り出し、FFmpeg で HLS に変換。</p>
             </li>
             <li class="flow-arrow" aria-hidden="true"></li>
             <li class="flow-step">
@@ -200,10 +198,10 @@
           <!-- 技術スタック -->
           <h4 class="sub-title">技術スタック</h4>
           <dl class="spec spec-wide">
-            <div><dt>バックエンド</dt><dd>Go / go-chi / pgx / go-redis / minio-go</dd></div>
-            <div><dt>フロントエンド</dt><dd>React / TypeScript / Vite / hls.js</dd></div>
+            <div><dt>バックエンド</dt><dd>Go</dd></div>
+            <div><dt>フロントエンド</dt><dd>React / TypeScript</dd></div>
             <div><dt>データ</dt><dd>PostgreSQL / Redis / MinIO・S3</dd></div>
-            <div><dt>動画変換</dt><dd>FFmpeg（H.264 / AAC / HLS）</dd></div>
+            <div><dt>動画変換</dt><dd>FFmpeg</dd></div>
             <div><dt>インフラ</dt><dd>Docker / Kubernetes / Kustomize / Envoy Gateway</dd></div>
             <div><dt>AWS</dt><dd>EKS / ECR / S3 / Route 53</dd></div>
             <div><dt>CI/CD</dt><dd>GitHub Actions</dd></div>

@@ -128,7 +128,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .hero-lead {
   margin: 0 0 32px;
-  max-width: 44em;
+  max-width: 54em;
   color: var(--text-muted);
   font-size: 1.05rem;
 }
